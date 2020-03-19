@@ -1,4 +1,4 @@
-package java.com.kata;
+package com.kata;
 
 public enum PipelineDigit {
     ZERO(" _ "+
