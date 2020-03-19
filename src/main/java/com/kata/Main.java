@@ -1,47 +1,12 @@
 package com.kata;
 
-public enum PipelineDigit {
-    ZERO(" _ "+
-            "| |"+
-            "|_|"),
+import java.util.Scanner;
 
-    ONE( "   "+
-            "  |"+
-            "  |"),
-
-    TWO( " _ "+
-            " _|"+
-            "|_ "),
-
-    THREE(" _ "+
-             " _|"+
-             " _|"),
-
-    FOUR("   " +
-            "|_|" +
-            "  |"),
-
-    FIVE(" _ "+
-            "|_ "+
-            " _|"),
-
-    SIX( " _ "+
-            "|_ "+
-            "|_|"),
-
-    SEVEN(" _ "+
-             "  |"+
-             "  |"),
-
-    EIGHT(" _ "+
-             "|_|"+
-             "|_|"),
-
-    NINE( " _ "+
-             "|_|"+
-             " _|");
-
-    PipelineDigit(String s) {
-
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String input = sc.nextLine();
+        System.out.println(Digits.get(input));
     }
 }
+
