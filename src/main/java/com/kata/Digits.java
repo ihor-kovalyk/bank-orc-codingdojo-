@@ -55,4 +55,5 @@ public enum Digits {
     }
 
     //TODO: check if enum map is applicable here
+
 }
