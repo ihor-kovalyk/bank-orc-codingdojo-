@@ -9,7 +9,7 @@ public class Main {
 
         DigitsFileReader reader = new DigitsFileReader();
         File file =reader.getFileFromResources("test.txt");
-        reader.printFile(file);
+        parser.parseDigitsFile(file);
 
     }
 }
