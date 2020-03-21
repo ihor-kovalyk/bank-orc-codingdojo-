@@ -63,6 +63,5 @@ public class PipeLineDigit {
         digits.put(NINE, 9);
         digits.forEach((key,value) -> {
             System.out.println(value);});
-
     }
 }
