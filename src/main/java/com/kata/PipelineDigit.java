@@ -1,6 +1,7 @@
-package java.com.kata;
+package com.kata;
 
 public enum PipelineDigit {
+
     ZERO(" _ "+
             "| |"+
             "|_|"),
@@ -45,3 +46,5 @@ public enum PipelineDigit {
 
     }
 }
+
+
