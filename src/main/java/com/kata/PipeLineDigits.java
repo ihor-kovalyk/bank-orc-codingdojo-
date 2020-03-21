@@ -3,7 +3,7 @@ package com.kata;
 import java.util.HashMap;
 import java.util.Map;
 
-public class PipeLineDigit {
+public class PipeLineDigits {
     public static final String ZERO =
             " _ \n" +
                     "| |\n" +
