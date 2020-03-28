@@ -46,10 +46,10 @@ public class PipeLineDigits {
                     "|_|\n" +
                     " _|\n";
 
-    public Map<String, Integer> digits;
+    public static Map<String, Integer> digits;
 
-    public void getDigit(String s) {
-        int i = 0;
+//    public void getDigit(String s) {
+static {
         digits = new HashMap<>();
         digits.put(ZERO, 0);
         digits.put(ONE, 1);
@@ -61,7 +61,16 @@ public class PipeLineDigits {
         digits.put(SEVEN, 7);
         digits.put(EIGHT, 8);
         digits.put(NINE, 9);
-        digits.forEach((key,value) -> {
-            System.out.println(value);});
+//        digits.forEach((key,value) -> {
+//            System.out.println(value);});
+    }
+    public static int parse(String s)
+    {
+        Integer result = digits.get(s);
+        if (null == result)
+            return -1;
+        else
+            return result;
+
     }
 }

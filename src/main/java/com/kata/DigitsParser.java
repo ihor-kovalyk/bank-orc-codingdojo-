@@ -16,11 +16,11 @@ public class DigitsParser {
 
         for (int i = 0; i < NUMBER_OF_DIGITS; i++) {
             StringBuilder number = new StringBuilder(9);
-            startIndex = i * 3;
+            startIndex = i*3;
 
-            number.append(line1.substring(startIndex, startIndex + 3));
-            number.append(line2.substring(startIndex, startIndex + 3));
-            number.append(line3.substring(startIndex, startIndex + 3));
+            number.append(line1.substring(startIndex,startIndex+3) + "\n");
+            number.append(line2.substring(startIndex,startIndex+3) + "\n");
+            number.append(line3.substring(startIndex,startIndex+3) + "\n");
 
         }
         return result.toString();
@@ -29,10 +29,13 @@ public class DigitsParser {
     public void parseDigitsFile(File fileName) throws IOException {
         BufferedReader br = new BufferedReader(new FileReader(fileName));
         String line1 = br.readLine();
+
+
         while (line1 != null) {
-//            line1 = br.readLine();
+
             String line2 = br.readLine();
-            String line3 = br.readLine();
+            String  line3 = br.readLine();
+
             br.readLine();
             String result = parseRecord(line1, line2, line3);
             System.out.println(result);
